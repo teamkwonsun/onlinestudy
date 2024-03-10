@@ -31,9 +31,10 @@ public class AppConfig {
     public OrderService orderService(){
         System.out.println("Call AppConfig.orderService");
         return new OrderServiceImpl(memberRepository(), discountPolicy());
+//        return null;
     }
 
-    @Bean
+//    @Bean
     public DiscountPolicy discountPolicy(){
         //return new FixDiscountPolicy(); //FixDiscountPolicy()에서  RateDiscountPolicy() 로 변경
         return new RateDiscountPolicy();

@@ -18,8 +18,8 @@ import org.springframework.context.annotation.FilterType;
 ) //컴포넌트 어노테이션을 찾아서 빈으로 등록해준다.
 public class AutoAppConfig {
 
-   /* @Bean(name = "memoryMemberRepository")
+
     MemberRepository memberRepository(){
         return new MemoryMemberRepository();
-    }*/
+    }
 }

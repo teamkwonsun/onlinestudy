@@ -11,7 +11,6 @@ public class MemberServiceImpl implements MemberService {
 
     @Autowired //ac.getBean(MemberRepository.class)
     public MemberServiceImpl(
-            @Qualifier("memberRepository")
             MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
